@@ -7,38 +7,38 @@ export default function MaintenancePage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6">
+      <div className="relative z-10 text-center px-4 sm:px-6 w-full max-w-2xl">
         {/* Code-like prefix */}
-        <div className="mb-8 font-mono text-sm text-accent">
+        <div className="mb-6 sm:mb-8 font-mono text-xs sm:text-sm text-accent">
           <span className="text-muted-foreground">$</span> <span>system.status</span>
         </div>
 
         {/* Main heading */}
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight">
           <span className="text-foreground">Under</span>
-          <span className="text-primary mx-3">/</span>
+          <span className="text-primary mx-2 sm:mx-3">/</span>
           <span className="text-foreground">Maintenance</span>
         </h1>
 
         {/* Status indicator */}
-        <div className="flex items-center justify-center gap-2 mb-8">
+        <div className="flex items-center justify-center gap-2 mb-6 sm:mb-8">
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-          <p className="text-accent font-mono text-sm">System upgrading</p>
+          <p className="text-accent font-mono text-xs sm:text-sm">System upgrading</p>
         </div>
 
         {/* Description */}
-        <p className="text-lg text-muted-foreground max-w-md mx-auto mb-12 leading-relaxed">
+        <p className="text-base sm:text-lg text-muted-foreground max-w-md mx-auto mb-8 sm:mb-12 leading-relaxed px-2">
           We're optimizing our infrastructure. Neural networks are training. Check back soon.
         </p>
 
         {/* Terminal-style box */}
-        <div className="border border-primary/20 rounded-lg bg-secondary/20 p-6 max-w-md mx-auto font-mono text-sm text-accent">
+        <div className="border border-primary/20 rounded-lg bg-secondary/20 p-4 sm:p-6 mx-auto font-mono text-xs sm:text-sm text-accent">
           <div className="flex gap-2 mb-4">
             <div className="w-3 h-3 rounded-full bg-primary/50"></div>
             <div className="w-3 h-3 rounded-full bg-primary/50"></div>
             <div className="w-3 h-3 rounded-full bg-primary/50"></div>
           </div>
-          <div className="text-left space-y-2 text-xs">
+          <div className="text-left space-y-2">
             <div><span className="text-primary">&gt;</span> <span className="text-muted-foreground">Rebuilding systems...</span></div>
             <div><span className="text-primary">&gt;</span> <span className="text-muted-foreground">Running diagnostics...</span></div>
             <div><span className="text-primary">&gt;</span> <span className="text-primary">ETA: Soon™</span></div>
