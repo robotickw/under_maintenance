@@ -28,7 +28,7 @@ export default function MaintenancePage() {
 
         {/* Description */}
         <p className="text-base sm:text-lg text-muted-foreground max-w-md mx-auto mb-8 sm:mb-12 leading-relaxed px-2">
-          We're optimizing our infrastructure. Neural networks are training. Check back soon.
+          We're optimizing our infrastructure. Check back soon.
         </p>
 
         {/* Terminal-style box */}
