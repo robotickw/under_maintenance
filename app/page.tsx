@@ -1,48 +1,38 @@
 export default function MaintenancePage() {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center relative overflow-hidden">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,transparent_24%,rgba(69,106,213,0.05)_25%,rgba(69,106,213,0.05)_26%,transparent_27%,transparent_74%,rgba(69,106,213,0.05)_75%,rgba(69,106,213,0.05)_76%,transparent_77%,transparent),linear-gradient(90deg,transparent_24%,rgba(69,106,213,0.05)_25%,rgba(69,106,213,0.05)_26%,transparent_27%,transparent_74%,rgba(69,106,213,0.05)_75%,rgba(69,106,213,0.05)_76%,transparent_77%,transparent)] bg-[50px_50px]"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 w-full max-w-2xl">
-        {/* Code-like prefix */}
-        <div className="mb-6 sm:mb-8 font-mono text-xs sm:text-sm text-accent">
-          <span className="text-muted-foreground">$</span> <span>system.status</span>
-        </div>
-
+    <div className="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6">
+      <div className="text-center max-w-md">
         {/* Main heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight">
-          <span className="text-foreground">Under</span>
-          <span className="text-primary mx-2 sm:mx-3">/</span>
-          <span className="text-foreground">Maintenance</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-primary">
+          Under Maintenance
         </h1>
 
-        {/* Status indicator */}
-        <div className="flex items-center justify-center gap-2 mb-6 sm:mb-8">
-          <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-          <p className="text-accent font-mono text-xs sm:text-sm">System upgrading</p>
-        </div>
-
         {/* Description */}
-        <p className="text-base sm:text-lg text-muted-foreground max-w-md mx-auto mb-8 sm:mb-12 leading-relaxed px-2">
-          We're optimizing our infrastructure. Check back soon.
+        <p className="text-base sm:text-lg text-muted-foreground mb-8">
+          We're upgrading our systems. We'll be back soon.
         </p>
 
-        {/* Terminal-style box */}
-        <div className="border border-primary/20 rounded-lg bg-secondary/20 p-4 sm:p-6 mx-auto font-mono text-xs sm:text-sm text-accent">
-          <div className="flex gap-2 mb-4">
-            <div className="w-3 h-3 rounded-full bg-primary/50"></div>
-            <div className="w-3 h-3 rounded-full bg-primary/50"></div>
-            <div className="w-3 h-3 rounded-full bg-primary/50"></div>
-          </div>
-          <div className="text-left space-y-2">
-            <div><span className="text-primary">&gt;</span> <span className="text-muted-foreground">Rebuilding systems...</span></div>
-            <div><span className="text-primary">&gt;</span> <span className="text-muted-foreground">Running diagnostics...</span></div>
-            <div><span className="text-primary">&gt;</span> <span className="text-primary">ETA: Soon™</span></div>
-          </div>
+        {/* Contact section */}
+        <div className="bg-secondary/30 border border-primary/20 rounded-lg p-6">
+          <p className="text-muted-foreground mb-6">Need something? Contact us on WhatsApp</p>
+          <a
+            href="https://wa.me/+96555501387"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex flex-col items-center gap-3 hover:opacity-80 transition-opacity"
+          >
+            <img 
+              alt="WhatsApp Icon" 
+              className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 rounded-lg" 
+              src="/whatsapp.webp"
+            />
+            <div className="flex flex-col gap-1">
+              <span className="block bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium text-sm">
+                WhatsApp
+              </span>
+              <span className="text-muted-foreground text-xs sm:text-sm">+965 55 501 387</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
